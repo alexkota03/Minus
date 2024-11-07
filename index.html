@@ -3,22 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fullscreen Images</title>
+    <title>Responsive Centered Images</title>
     <style>
         /* إعدادات CSS لتوسيط الصور عمودياً */
         body {
             display: flex;
             flex-direction: column;
+            justify-content: flex-start; /* تعديل التوسيط إلى الأعلى */
             align-items: center;
+            min-height: 100vh; /* ارتفاع كامل الشاشة */
             margin: 0;
+            padding: 0 5vw; /* مسافة صغيرة من الجوانب */
         }
 
         /* التنسيق الافتراضي للصور */
         img {
-            width: 100vw; /* عرض الصورة كامل الشاشة */
-            height: 100vh; /* ارتفاع الصورة كامل الشاشة */
-            object-fit: cover; /* لتغطية الصورة بالكامل */
-            margin: 0; /* إزالة الفراغات */
+            width: 100%; /* عرض الصورة كامل */
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* التنسيق الخاص بالشاشات الصغيرة (الموبايل) */
+        @media (max-width: 768px) {
+            img {
+                width: 100%; /* عرض الصورة يكون عرض الصفحة */
+                max-height: 50vh; /* ارتفاع مناسب للموبايل */
+            }
         }
     </style>
 </head>
