@@ -11,14 +11,15 @@
             flex-direction: column;
             justify-content: flex-start; /* تعديل التوسيط إلى الأعلى */
             align-items: center;
-            min-height: 0vh; /* ارتفاع كامل الشاشة */
+            min-height: 100vh; /* ارتفاع كامل الشاشة */
             margin: 0;
             padding: 0 5vw; /* مسافة صغيرة من الجوانب */
+            background-color: yellow; /* خلفية الصفحة صفراء */
         }
 
         /* التنسيق الافتراضي للصور */
         img {
-            width: 10%; /* عرض الصورة كامل */
+            width: 100%; /* عرض الصورة كامل */
             height: auto;
             margin-bottom: 5px;
         }
@@ -34,7 +35,7 @@
         /* تنسيق أزرار الاتصال والواتس */
         .contact-buttons {
             display: flex;
-            flex-direction: column;
+            flex-direction: row; /* الأزرار تكون بجانب بعض */
             align-items: center;
             gap: 10px;
             margin-top: 20px;
@@ -49,7 +50,7 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            width: 80%;
+            width: auto; /* عرض الزر تلقائي */
             justify-content: center;
         }
 
