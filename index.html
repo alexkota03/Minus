@@ -11,10 +11,10 @@
             flex-direction: column;
             justify-content: flex-start; /* تعديل التوسيط إلى الأعلى */
             align-items: center;
-            min-height: 0vh; /* ارتفاع كامل الشاشة */
+            min-height: 100vh; /* ارتفاع كامل الشاشة */
             margin: 0;
             padding: 0 5vw; /* مسافة صغيرة من الجوانب */
-            background-color: red; /* خلفية الصفحة صفراء */
+            background-color: yellow; /* خلفية الصفحة صفراء */
         }
 
         /* التنسيق الافتراضي للصور */
@@ -41,6 +41,7 @@
             margin-top: 20px;
         }
 
+        /* تنسيق أزرار التواصل */
         .contact-buttons a {
             text-decoration: none;
             color: white;
@@ -62,6 +63,11 @@
             background-color: #000000; /* لون زر الواتس */
         }
 
+        .facebook-button {
+            background-color: #3b5998; /* لون زر الفيسبوك */
+            margin-top: 10px; /* إضافة مسافة لفصل زر الفيسبوك عن الأزرار الأخرى */
+        }
+
         .contact-buttons img {
             width: 20px; /* حجم أيقونة الاتصال */
             height: 20px;
@@ -81,6 +87,14 @@
         <a href="https://wa.me/201044616863" class="whatsapp-button">
             <img src="whatsapp-icon.png" alt="WhatsApp Icon"> <!-- رابط صورة أيقونة الواتس -->
             الواتس
+        </a>
+    </div>
+
+    <!-- زر الفيسبوك -->
+    <div class="contact-buttons">
+        <a href="https://www.facebook.com/profile.php?id=100009516120388" class="facebook-button">
+            <img src="facebook-icon.png" alt="Facebook Icon"> <!-- رابط صورة أيقونة الفيسبوك -->
+            فيسبوك
         </a>
     </div>
 
