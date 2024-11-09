@@ -21,7 +21,6 @@
         img {
             width: 100%;
             height: auto;
-            margin-bottom: 5px;
         }
 
         /* إضافة مسافة قبل الصورة الأولى */
@@ -29,9 +28,12 @@
             margin-top: 10px; /* المسافة المطلوبة قبل الصورة الأولى */
         }
 
-        /* إضافة مسافة بين الصور */
-        .second-image {
-            margin-top: 3px; /* المسافة المطلوبة بين الصورة الأولى والثانية */
+        /* الفاصل بين الصور */
+        .separator {
+            width: 100%;
+            height: 10px; /* ارتفاع الفاصل */
+            background-color: yellow; /* لون الفاصل */
+            margin: 5px 0; /* المسافة حول الفاصل */
         }
 
         /* التنسيق الخاص بالشاشات الصغيرة (الموبايل) */
@@ -51,7 +53,7 @@
         }
 
         .contact-buttons.single {
-            margin-top: 5px; /* مسافة بين أزرار الاتصال والواتس وبين زر الفيسبوك */
+            margin-top: 5px;
         }
 
         .contact-buttons a {
@@ -67,15 +69,7 @@
             justify-content: center;
         }
 
-        .call-button {
-            background-color: #3b5998;
-        }
-
-        .whatsapp-button {
-            background-color: #3b5998;
-        }
-
-        .facebook-button {
+        .call-button, .whatsapp-button, .facebook-button {
             background-color: #3b5998;
         }
 
@@ -88,6 +82,10 @@
 <body>
 
     <img src="mu1.png" alt="Description of Image" class="first-image">
+
+    <!-- الفاصل الأصفر بين الصورتين -->
+    <div class="separator"></div>
+
     <img src="mu2.png" alt="Description of Image" class="second-image">
 
     <div class="contact-buttons">
