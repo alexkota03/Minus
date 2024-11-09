@@ -9,39 +9,47 @@
         body {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* تعديل التوسيط إلى الأعلى */
+            justify-content: flex-start;
             align-items: center;
-            min-height: 0vh; /* ارتفاع كامل الشاشة */
+            min-height: 0vh;
             margin: 0;
-            padding: 0 5vw; /* مسافة صغيرة من الجوانب */
-            background-color: black; /* خلفية الصفحة صفراء */
+            padding: 0 5vw;
+            background-color: black;
         }
 
         /* التنسيق الافتراضي للصور */
         img {
-            width: 100%; /* عرض الصورة كامل */
+            width: 100%;
             height: auto;
             margin-bottom: 5px;
+        }
+
+        /* إضافة مسافة قبل الصورة الأولى */
+        .first-image {
+            margin-top: 20px; /* المسافة المطلوبة قبل الصورة الأولى */
+        }
+
+        /* إضافة مسافة بين الصور */
+        .second-image {
+            margin-top: 15px; /* المسافة المطلوبة بين الصورة الأولى والثانية */
         }
 
         /* التنسيق الخاص بالشاشات الصغيرة (الموبايل) */
         @media (max-width: 768px) {
             img {
-                width: 110%; /* عرض الصورة يكون عرض الصفحة */
-                max-height: 50vh; /* ارتفاع مناسب للموبايل */
+                width: 110%;
+                max-height: 50vh;
             }
         }
 
-        /* تنسيق أزرار الاتصال والواتس */
         .contact-buttons {
             display: flex;
-            flex-direction: row; /* الأزرار تكون بجانب بعض */
+            flex-direction: row;
             align-items: center;
             gap: 10px;
             margin-top: 20px;
         }
 
-        /* تنسيق أزرار التواصل */
         .contact-buttons a {
             text-decoration: none;
             color: white;
@@ -51,49 +59,48 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            width: auto; /* عرض الزر تلقائي */
+            width: auto;
             justify-content: center;
         }
 
         .call-button {
-            background-color: #3b5998; /* لون زر الاتصال */
+            background-color: #3b5998;
         }
 
         .whatsapp-button {
-            background-color: #3b5998; /* لون زر الواتس */
+            background-color: #3b5998;
         }
 
         .facebook-button {
-            background-color: #3b5998; /* لون زر الفيسبوك */
-            margin-top: 5-px; /* تقليل المسافة العلوية لزر الفيسبوك */
+            background-color: #3b5998;
+            margin-top: 5px;
         }
 
         .contact-buttons img {
-            width: 20px; /* حجم أيقونة الاتصال */
+            width: 20px;
             height: 20px;
         }
     </style>
 </head>
 <body>
 
-    <img src="mu1.png" alt="Description of Image">
-    <img src="mu2.png" alt="Description of Image">
+    <img src="mu1.png" alt="Description of Image" class="first-image">
+    <img src="mu2.png" alt="Description of Image" class="second-image">
 
     <div class="contact-buttons">
         <a href="tel:035172350" class="call-button">
-            <img src="phone-icon.png" alt="Call Icon"> <!-- رابط صورة أيقونة الاتصال -->
+            <img src="phone-icon.png" alt="Call Icon">
             للاتصال
         </a>
         <a href="https://wa.me/201044616863" class="whatsapp-button">
-            <img src="whatsapp-icon.png" alt="WhatsApp Icon"> <!-- رابط صورة أيقونة الواتس -->
+            <img src="whatsapp-icon.png" alt="WhatsApp Icon">
             الواتس
         </a>
     </div>
 
-    <!-- زر الفيسبوك -->
     <div class="contact-buttons">
         <a href="https://www.facebook.com/yourpage" class="facebook-button">
-            <img src="facebook-icon.png" alt="Facebook Icon"> <!-- رابط صورة أيقونة الفيسبوك -->
+            <img src="facebook-icon.png" alt="Facebook Icon">
             فيسبوك
         </a>
     </div>
